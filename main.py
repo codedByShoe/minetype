@@ -289,11 +289,8 @@ class TypingTutor:
         self.root = root
         self.root.title("Mine & Type!")
         self.root.configure(bg=BG)
-        sw = self.root.winfo_screenwidth()
-        sh = self.root.winfo_screenheight()
-        w, h = min(1280, sw - 40), min(900, sh - 60)
-        self.root.geometry(f"{w}x{h}")
-        self.root.resizable(True, True)
+        self.root.attributes("-fullscreen", True)
+        self.root.bind("<Escape>", lambda _e: self.root.attributes("-fullscreen", False))
         self.root.bind("<KeyPress>", self.on_key)
 
         self.save = _load_save()
