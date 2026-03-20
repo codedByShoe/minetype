@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=MineType
+Comment=Minecraft-themed typing tutor
+Exec=python3 /home/andrew/Apps/minetype/main.py
+Icon=/home/andrew/Apps/minetype/minetype.svg
+Terminal=false
+Categories=Education;Game;
