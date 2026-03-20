@@ -1,0 +1,10 @@
+[project]
+name = "minetype"
+version = "0.1.0"
+description = "minetype is a Python library for rendering Minecraft block textures in 3D using Pillow and Pygame."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pillow>=12.1.1",
+    "pygame>=2.0",
+]
