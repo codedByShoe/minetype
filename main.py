@@ -289,8 +289,7 @@ class TypingTutor:
         self.root = root
         self.root.title("Mine & Type!")
         self.root.configure(bg=BG)
-        self.root.attributes("-fullscreen", True)
-        self.root.bind("<Escape>", lambda _e: self.root.attributes("-fullscreen", False))
+        self.root.attributes("-zoomed", True)
         self.root.bind("<KeyPress>", self.on_key)
 
         self.save = _load_save()
